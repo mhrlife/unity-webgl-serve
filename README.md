@@ -7,15 +7,15 @@
 - Sets the `Content-Type` header for:
   - `.wasm`, `.wasm.br`, and `.wasm.gz` files: `Content-Type: application/wasm`
 ## Installation
-To install unity-webgl-serve, use the go get command:
+To install unity-webgl-serve, use the go install command:
 ```bash
-go get github.com/mhrlife/unity-webgl-serve
+ go install github.com/mhrlife/unity-webgl-serve@latest
 ```
-Then, install the command:
+Make sure your `$GOPATH/bin` directory is in your system's PATH.
 ```bash
-go install github.com/mhrlife/unity-webgl-serve
+export PATH="$HOME/go/bin:$PATH"
 ```
-Make sure your `$GOPATH/bin` directory is in your system's PATH. By default, this is `C:\Users\<YourUsername>\go\bin` on Windows or `$HOME/go/bin` on Linux/Mac.
+By default, this is `C:\Users\<YourUsername>\go\bin` on Windows or `$HOME/go/bin` on Linux/Mac.
 ## Usage
 To use the tool, navigate to the directory where your Unity WebGL game files are located and run:
 ```bash
